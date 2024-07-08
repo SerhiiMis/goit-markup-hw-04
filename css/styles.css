@@ -119,6 +119,19 @@ img {
   color: #404bbf;
 }
 
+.nav-link.active {
+  color: #404bbf;
+}
+
+.nav-link.active::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #404bbf;
+}
+
 /* #region Logo*/
 .logo {
   margin-right: 76px;
@@ -161,9 +174,14 @@ img {
 
 /*-- Section#1 --*/
 .hero .container {
+  width: 1440px;
   background-color: #2e2f42;
   padding: 188px 0;
-  background-image: url(../images/people-office\ 1.jpg);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office\ 1.jpg);
   background-size: auto;
 }
 
@@ -220,6 +238,16 @@ img {
   width: calc((100% - 72px) / 4);
 }
 
+.features-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 264px;
+  height: 112px;
+  border: 1px solid #2e2f42;
+  border-radius: 4%;
+}
+
 .features-title {
   margin-bottom: 8px;
   font-weight: 500;
@@ -264,6 +292,9 @@ img {
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
   width: calc((100% - 72px) / 4);
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
 .team-name {
