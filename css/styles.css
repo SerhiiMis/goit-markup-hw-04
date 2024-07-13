@@ -1,5 +1,5 @@
 :root {
-  --clean-white-color: #ffffff;
+  --white: #ffffff;
   --white-color: #f4f4fd;
   --blue-color: #4d5ae5;
   box-sizing: border-box;
@@ -486,17 +486,16 @@ div .portfolio-card {
 }
 
 .footer-text {
-  color: var(--white-color);
   max-width: 264px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--clean-white-color);
+  color: var(--white);
 }
 
 .footer-text-social-media {
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--clean-white-color);
+  color: var(--white);
 }
 
 .footer .container {
@@ -508,7 +507,7 @@ div .portfolio-card {
 .footer-text-social-media {
   font-weight: 500;
   margin-bottom: 16px;
-  color: var(--white-color);
+  color: var(--white);
 }
 
 .footer .social-icons-list {
